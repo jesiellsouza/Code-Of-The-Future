@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!--metas-->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media-mobile.css">
-    <link rel="shortcut icon" href="./img/robot-1.png" type="image/x-icon">
+
+    <!--links-->
+    <link rel="stylesheet" href="./css/style.css"> <!--link-stilo-->
+    <link rel="stylesheet" href="./css/media-mobile.css"> <!--link-responsividade-->
+    <link rel="shortcut icon" href="./img/robot-1.png" type="image/x-icon"> <!--icone-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    
+    <!--titulo-->
     <title>Code of The Future</title>
 </head>
 <body>
@@ -14,22 +20,23 @@
     <!--inicio-barra-de-navegação-->
     <header>
         <nav>
-            <a href="/" class="logo"><img src="./img/logo/logo-white.png" alt="logo-code"></a>
+            <a href="/" class="logo"><img src="./img/logo/logo-white.png" alt="logo-code"></a> <!--logo-->
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Sobre</a></li>
-                <li><a href="/">Projetos</a></li>
-                <li><a href="/">Contato</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
     <!--fim-barra-de-navegação-->
 
+    <!--inicio-future-->
     <div class="future-content">
         <div class="future-title">
             <h2><span class="auto-type"></span></h2>
@@ -37,18 +44,67 @@
         <div class="future-img">
         </div>
     </div>
+    <!--final-future-->
 
+    <!--inicio-sobre-->
+    <div class="sobre-content">
+        <div class="sobre-paragraph">
+            <h2>Sobre</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, necessitatibus nam? Quibusdam magnam tempora placeat odit harum eaque, nobis obcaecati at sunt, consequatur iusto voluptatem tenetur incidunt facilis maiores beatae qui neque iure reiciendis totam, illo quasi adipisci. Laboriosam earum eaque architecto non corrupti adipisci maiores fugiat numquam similique perspiciatis incidunt accusantium, facere molestias eligendi suscipit neque eveniet! Consequatur provident nostrum iusto dolor, repellendus maiores debitis, atque soluta optio quis est amet asperiores libero veritatis? Quibusdam beatae natus aliquid iste! Mollitia illum quam ullam unde hic dignissimos modi quia dolore molestiae molestias. Atque perspiciatis quo, nihil totam in excepturi minima reprehenderit dolore nemo, quos voluptatem, alias exercitationem aliquam quasi hic veritatis maiores saepe incidunt libero nobis sint dolorum consequuntur quae. Impedit commodi fugit illum, fuga est facilis facere expedita quisquam tenetur eos cumque quo perspiciatis exercitationem id? Harum, id!</p>
+            <a href="#">Ver Mais...</a>
+        </div>
+        <div class="sobre-img">
+            <img src="./img/robot-1.png" alt="robot-gif">
+        </div>
+    </div>
+    <!--final-sobre-->
+
+    <!--inicio-slide-->
+    <div class="slider-content">
+        <div class="slider">
+        
+            <div class="slides">
+                <!--radio buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!--fim radio buttons-->
+
+                <!--slides img-->
+                <div class="slide first">
+                    <img src="./img/img-3.jpg" alt="imagen 1">
+                </div>
+                <div class="slide">
+                    <img src="./img/img-4.jpg" alt="imagen 2">
+                </div>
+                <div class="slide">
+                    <img src="./img/img-8.jpg" alt="imagen 3">
+                </div>
+                <!--fim slides img-->
+
+                <!--navigation auto-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+
+    </div>
 
     <script src="./js/mobile-navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./js/main.js"></script>
 
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["O Futuro Está Aqui!", "A melhor forma de prever o futuro é criá-lo!"],
-            typeSpeed: 150,
-            loop: true
-        })
-    </script>
-    
+
 </body>
 </html>
